@@ -1,0 +1,4 @@
+interface:
+  display_name: "Readme-Banner"
+  short_description: "Create clear hand-drawn SVG headers for READMEs"
+  default_prompt: "Use $readme-banner to create an English SVG header for this project README, with a large title on the left and a clear product diagram on the right."

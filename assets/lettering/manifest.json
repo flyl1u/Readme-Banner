@@ -1,0 +1,35 @@
+{
+  "schema": "fly-readme.lettering/v1",
+  "fonts": {
+    "upright-regular": {
+      "file": "upright-regular.json.gz",
+      "sha256": "a60ee4cef84d20d8caf9d6bbf15a9d89254ad43fdf6f68031ca38745fa7b5dad",
+      "sourceSha256": "9ef4958ab06385d91f635f83a15569786b243f9d010cfb3f9a5cdda593c7bc22",
+      "licenseFile": "OFL-ComicRelief.txt"
+    },
+    "upright-bold": {
+      "file": "upright-bold.json.gz",
+      "sha256": "c1c0fcc47d42dbc2f6f0cdeb4a5d6a90269f0ab9d7801fb447233046b7baed3e",
+      "sourceSha256": "33aee007212b696afd57d50c901135cd723cd188f7ad98f3a1c572ea64e8f0d5",
+      "licenseFile": "OFL-ComicRelief.txt"
+    },
+    "latin-regular": {
+      "file": "latin-regular.json.gz",
+      "sha256": "d12ded0c9aad963f335b9e5830aee5b7b7cb397a304b0932cdf66c3868278c5d",
+      "sourceSha256": "57cecb63d4608019371954274ae1d8c397764debd5b19d4a33c1efa4dc923c0b",
+      "licenseFile": "OFL-Kalam.txt"
+    },
+    "latin-bold": {
+      "file": "latin-bold.json.gz",
+      "sha256": "04925fe594270eaa2680c1f921651ac6a8e92149c10ba5703bc699471a9ab415",
+      "sourceSha256": "2f6576601db015d4f6c08678120277fc8510b98c06e932ce7a6a9cbff4cbdded",
+      "licenseFile": "OFL-Kalam.txt"
+    },
+    "cjk-regular": {
+      "file": "cjk-regular.json.gz",
+      "sha256": "795032d9866053e702d319d9c239e97d965fc28f4e282becf092a6140144a03f",
+      "sourceSha256": "e2f68daf0e72777a8cf58bc83de1b98634b251e537ddbfca24b0ae50d1802da2",
+      "licenseFile": "OFL-Xiaolai.txt"
+    }
+  }
+}

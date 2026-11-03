@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.gz -text
+*.png -text
+# Keep upstream license notices byte-for-byte, including their whitespace.
+assets/lettering/OFL-*.txt -text -whitespace
+assets/style-references/*-LICENSE.txt -text -whitespace

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="mark-title mark-desc">
+  <title id="mark-title">Readme-Banner mark</title>
+  <desc id="mark-desc">A small README header with a title, diagram, and drawing pencil.</desc>
+  <g fill="none" stroke="#343932" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 27 Q63 25 108 28 L107 99 Q61 102 18 98 Z" fill="#FFFDF7"/>
+    <path d="M20 44 Q65 45 107 43"/>
+    <path d="M29 58 L58 59 M29 70 L51 69"/>
+    <path d="M29 80 L57 81" stroke="#D9AE4E" stroke-width="7"/>
+    <path d="M72 58 L91 59 L91 80 L72 79 Z" fill="#C9DFC9" stroke-width="3"/>
+    <path d="M88 95 L96 82 L116 62 L124 70 L104 90 Z" fill="#F4D786" stroke-width="3"/>
+    <path d="M96 82 L104 90 M88 95 L99 92" stroke-width="3"/>
+  </g>
+  <g fill="#343932"><circle cx="28" cy="35" r="2"/><circle cx="37" cy="35" r="2"/><circle cx="46" cy="35" r="2"/></g>
+</svg>

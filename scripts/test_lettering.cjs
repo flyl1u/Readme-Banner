@@ -1,0 +1,38 @@
+// Semantic regression checks; uses Node built-ins and bundled glyph data only.
+const assert=require('node:assert/strict');
+const draw=require('./draw.cjs');
+const lettering=require('./lettering.cjs');
+const scene={id:'lettering-test',title:'Handwriting regression',allowCjk:true,width:600,height:220,
+  labels:[{text:'Hand \u7ed8\u5b57 2026',x:30,y:35,w:540,h:120,size:48}]};
+const first=draw.svg(scene);
+assert(!/<text\b/.test(first),'Publication lettering must not depend on native SVG text');
+assert(first.includes('data-font="Comic Relief"'));
+assert(first.includes('data-font="Xiaolai"'));
+assert(first.includes('aria-label="Hand \u7ed8\u5b57 2026"'),'Wording must remain in accessibility metadata');
+const oldFontNames={...scene,labels:scene.labels.map(t=>({...t,font:'Missing_System_Font, KaiTi, sans-serif'}))};
+assert.equal(draw.svg(oldFontNames),first,'A legacy font stack must not alter outlined publication');
+const info=lettering.summary(scene);
+assert.equal(info.portableHandwriting,true);
+assert.equal(info.coverageChecked,true);
+assert.deepEqual(info.fonts,['Comic Relief','Xiaolai']);
+assert(info.assets.every(a=>a.sourceSha256.length===64&&a.dataSha256.length===64));
+const regular=lettering.layout('Hand',48,false).glyphs.map(g=>g.glyph.path).join('');
+const bold=lettering.layout('Hand',48,true).glyphs.map(g=>g.glyph.path).join('');
+assert.notEqual(regular,bold,'English bold must use a genuine different font weight');
+const body=lettering.layout('Hand',48,false,0,'body');
+assert(body.fonts.every(f=>f.sourceFamily==='Kalam'),'Small body text must retain its approved handwriting');
+assert.notEqual(regular,body.glyphs.map(g=>g.glyph.path).join(''),'Display and body are deliberately different visual roles');
+const chinese='\u4e2d\u6587';
+const cjkUpright=lettering.layout(chinese,28,false,0,'upright').glyphs.map(g=>g.glyph.path).join('');
+const cjkBody=lettering.layout(chinese,28,false,0,'body').glyphs.map(g=>g.glyph.path).join('');
+assert.equal(cjkUpright,cjkBody,'Changing English heading roles must not alter corrected Chinese glyphs');
+assert.throws(()=>lettering.layout('Hand',28,false,0,'unknown'),/Unknown letteringStyle/);
+assert.throws(()=>lettering.layout(String.fromCodePoint(0x10FFFF)),/No bundled handwritten glyph/);
+assert.throws(()=>draw.svg({...scene,allowCjk:false}),/Use English/,'Default language policy must remain English');
+assert.throws(()=>draw.svg({...scene,labels:[{...scene.labels[0],w:10}]}),/does not fit/);
+assert.throws(()=>draw.svg({...scene,art:'<text x="10" y="10">Bypass</text>'}),/Put banner lettering in labels/);
+const native={...scene,textMode:'native'};
+assert(/<text\b/.test(draw.svg(native)));
+assert.equal(lettering.summary(native).portableHandwriting,false);
+assert.equal(lettering.summary(native).coverageChecked,false);
+console.log('PASS: upright display, retained body handwriting, unchanged CJK glyphs, portable outlines, legacy-stack independence, coverage errors, true bold, bounds, language policy, and explicit native-text tradeoff.');
