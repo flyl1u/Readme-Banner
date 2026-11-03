@@ -8,6 +8,30 @@ Turn a project's purpose into a clear, distinctive SVG at the top of its README.
 
 This Agent Skill reads the project, creates the banner, builds a local preview, and refines it from feedback. The finished SVG embeds directly in a GitHub README without installed fonts, a build step, or remote assets to view it.
 
+## Examples
+
+These are the actual SVGs used by the projects. Click an image to visit its repository. The introduction banner at the top of this README was also made with Readme-Banner.
+
+### fly-favicon · Generated with this skill
+
+From an icon design request to multiple candidates, comparison, tab testing, and downloads. This banner was generated with the skill and refined to correct its English and Chinese lettering.
+
+[![fly-favicon banner: design input becomes icon candidates to compare and try](assets/readme/examples/fly-favicon.en.svg)](https://github.com/flyl1u/fly-favicon)
+
+### fly-brief · Original workflow
+
+Several Agents feed one skill, which produces a local HTML report. The grouping, shared inlet, and proportion revisions behind this banner became the original workflow for Readme-Banner.
+
+[![fly-brief banner: Agents feed a skill that produces a local HTML report](assets/readme/examples/fly-brief.en.svg)](https://github.com/flyl1u/fly-brief)
+
+### CodexPulse · Visual reference
+
+The same project moves between the before and after panels, explaining how recent activity brings it to the top. This banner was an early visual reference for the skill.
+
+[![CodexPulse banner: Project B moves from second place to the top](assets/readme/examples/codex-pulse.en.svg)](https://github.com/flyl1u/CodexPulse)
+
+The example SVGs preserve their upstream versions. See [provenance and licenses](assets/readme/examples/SOURCES.md).
+
 ## What it does
 
 - **Explains the actual project.** Reads the README, relevant implementation, and existing mark before choosing an input/output flow, grouped diagram, before/after example, or another useful relationship.
@@ -20,15 +44,16 @@ Banner copy defaults to English. Ask explicitly for Chinese or bilingual output 
 
 ## Install
 
-Install the repository in your Agent's skills directory. For the default Codex location, this command works in PowerShell and Bash:
+Copy this prompt to your Agent:
 
-```sh
-git clone https://github.com/flyl1u/Readme-Banner.git "$HOME/.codex/skills/readme-banner"
+```text
+Please install the Readme-Banner skill:
+https://github.com/flyl1u/Readme-Banner
+
+Read the repository's installation instructions and SKILL.md, then install it in this Agent's skills directory.
+If an older version exists, preserve local changes before updating it.
+After installation, check that the skill is discoverable and explain how to invoke Readme-Banner.
 ```
-
-If you set `CODEX_HOME`, use its `skills/readme-banner` directory instead. For another Agent that supports `SKILL.md`, use that Agent's skill installation directory.
-
-The folder, internal identifier, and explicit invocation use lowercase `readme-banner`. The display name and natural-language trigger are **Readme-Banner**.
 
 ## Use
 

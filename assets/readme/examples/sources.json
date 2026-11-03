@@ -1,0 +1,44 @@
+[
+  {
+    "file": "fly-brief.en.svg",
+    "repository": "flyl1u/fly-brief",
+    "path": "assets/readme/hero.svg",
+    "gitBlobSha": "35f63243a0fea2bd0092df14c7d775c1a60fbd77",
+    "source": "https://github.com/flyl1u/fly-brief/blob/main/assets/readme/hero.svg"
+  },
+  {
+    "file": "fly-brief.zh-CN.svg",
+    "repository": "flyl1u/fly-brief",
+    "path": "assets/readme/hero.zh-CN.svg",
+    "gitBlobSha": "e6219a463c1336b9ebde1215ff9e8c1e760c8f95",
+    "source": "https://github.com/flyl1u/fly-brief/blob/main/assets/readme/hero.zh-CN.svg"
+  },
+  {
+    "file": "fly-favicon.en.svg",
+    "repository": "flyl1u/fly-favicon",
+    "path": "assets/readme/hero-en.svg",
+    "gitBlobSha": "fe85f824d16256a952338c229f56ba9929cb7c36",
+    "source": "https://github.com/flyl1u/fly-favicon/blob/main/assets/readme/hero-en.svg"
+  },
+  {
+    "file": "fly-favicon.zh-CN.svg",
+    "repository": "flyl1u/fly-favicon",
+    "path": "assets/readme/hero-zh.svg",
+    "gitBlobSha": "4d28522acd56237456e70e7a18cbc33ec5557802",
+    "source": "https://github.com/flyl1u/fly-favicon/blob/main/assets/readme/hero-zh.svg"
+  },
+  {
+    "file": "codex-pulse.en.svg",
+    "repository": "flyl1u/CodexPulse",
+    "path": "assets/readme/hero.en.svg",
+    "gitBlobSha": "22805c33a3c1714fccbb68f11d429e852b8f857f",
+    "source": "https://github.com/flyl1u/CodexPulse/blob/main/assets/readme/hero.en.svg"
+  },
+  {
+    "file": "codex-pulse.zh-CN.svg",
+    "repository": "flyl1u/CodexPulse",
+    "path": "assets/readme/hero.zh-CN.svg",
+    "gitBlobSha": "046d33f158defa6d67f2165da478f80e65ac96c4",
+    "source": "https://github.com/flyl1u/CodexPulse/blob/main/assets/readme/hero.zh-CN.svg"
+  }
+]

@@ -8,6 +8,30 @@
 
 这是一个 Agent Skill：负责理解项目、制作首图、生成本地预览，并根据反馈调整。生成的 SVG 可以直接放进 GitHub README，查看时无需安装字体、构建项目或联网加载素材。
 
+## 案例
+
+下面直接展示项目中使用的 SVG，点击图片可查看对应项目。本仓库顶部的介绍图也由 Readme-Banner 制作。
+
+### fly-favicon · 生成案例
+
+从图标设计需求，到多风格候选、对比试用和下载。这张首图使用本 Skill 生成，并经过中英文字体修订。
+
+[![fly-favicon 首图：从设计需求到多风格图标对比与试用](assets/readme/examples/fly-favicon.zh-CN.svg)](https://github.com/flyl1u/fly-favicon)
+
+### fly-brief · 流程来源
+
+多个 Agent 汇入同一个 Skill，再产出本地 HTML 报告。这张首图的分组、公共入口和比例调整过程，是本 Skill 的原始制作案例与流程来源。
+
+[![fly-brief 首图：多个 Agent 汇入 Skill，生成本地 HTML 报告](assets/readme/examples/fly-brief.zh-CN.svg)](https://github.com/flyl1u/fly-brief)
+
+### CodexPulse · 风格参考
+
+用同一个项目在排序前后的变化，解释“最近活跃的项目移到顶部”。这张首图是本 Skill 的早期视觉参考。
+
+[![CodexPulse 首图：项目 B 从第二位移到顶部](assets/readme/examples/codex-pulse.zh-CN.svg)](https://github.com/flyl1u/CodexPulse)
+
+案例 SVG 保留原项目版本，来源与授权见 [案例记录](assets/readme/examples/SOURCES.md)。
+
 ## 效果与特点
 
 - **先讲清项目。** 阅读 README、实现和已有图标，再选择输入输出、分组流程或前后对比等合适的图解。
@@ -20,15 +44,16 @@
 
 ## 安装
 
-将这个仓库安装到所用 Agent 的 Skill 目录。Codex 默认目录示例（PowerShell / Bash 均可使用）：
+把下面这段提示词复制给你的 Agent：
 
-```sh
-git clone https://github.com/flyl1u/Readme-Banner.git "$HOME/.codex/skills/readme-banner"
+```text
+请帮我安装 Readme-Banner Skill：
+https://github.com/flyl1u/Readme-Banner
+
+阅读仓库中的安装说明与 SKILL.md，安装到当前 Agent 的 Skill 目录。
+如果已有旧版本，请保留本地修改后更新。
+安装完成后，检查 Skill 是否可以识别，并告诉我如何用 Readme-Banner 调用。
 ```
-
-如果设置了 `CODEX_HOME`，请改放到该目录下的 `skills/readme-banner`。其他支持 `SKILL.md` 的 Agent，请使用它自己的 Skill 安装目录。
-
-安装目录、内部标识和显式调用名使用小写 `readme-banner`；展示名称与自然语言触发语是 **Readme-Banner**。
 
 ## 使用
 
