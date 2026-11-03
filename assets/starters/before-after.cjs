@@ -20,8 +20,8 @@ module.exports=({draw:d})=>{
     labels:[
       {text:'Local workflow',x:66,y:171,w:475,h:36,size:23,letteringStyle:'upright',color:'#6E7065'},
       {text:'FocusOrder',x:60,y:192,w:505,h:148,size:84,bold:true,letteringStyle:'upright',letterSpacing:-3},
-      {text:'Keep active work within reach.',x:66,y:335,w:485,h:57,size:29,letteringStyle:'body'},
-      {text:'Recent activity, easier to find.',x:68,y:408,w:480,h:42,size:22,letteringStyle:'body',color:'#6E7065'},
+      {text:'Keep active work within reach.',x:66,y:335,w:485,h:57,size:29,letteringStyle:'upright'},
+      {text:'Recent activity, easier to find.',x:68,y:408,w:480,h:42,size:22,letteringStyle:'upright',color:'#6E7065'},
       {text:'Finish a turn in Project B.',x:738,y:102,w:800,h:48,size:29,letteringStyle:'body'},
       {text:'Before',x:730,y:150,w:250,h:44,size:25,letteringStyle:'body',color:'#6E7065'},
       {text:'After',x:1240,y:150,w:250,h:44,size:25,letteringStyle:'body',color:'#6E7065'},

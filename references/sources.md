@@ -14,3 +14,5 @@ The fly-brief banner is the selected two-column grouped-host version created in 
 Both PNGs are supplied only as user-authorized style references. Do not reuse their project names, product claims, host list, or project icon as the identity of another project. Obtain any new brand marks independently and record their actual sources and licenses in that project's material notes.
 
 The helper scripts and fictional starter scenes in this skill are local authoring resources. They do not contain external brand assets, require a live reference URL, or depend on fly-ppt. New final SVGs must contain their own resources.
+
+Typography detail checked against the pinned fly-brief English hero: the left promise and support line both declare `Comic Sans MS, Segoe Print, cursive`, normal style, weight 400, at 32 px and 21 px. Readme-Banner uses OFL Comic Relief outlines for their rounded upright character. The Chinese reference uses a system sans-serif stack; it is not used to replace the separately approved Xiaolai localization.

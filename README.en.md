@@ -11,7 +11,7 @@ This Agent Skill reads the project, creates the banner, builds a local preview, 
 ## What it does
 
 - **Explains the actual project.** Reads the README, relevant implementation, and existing mark before choosing an input/output flow, grouped diagram, before/after example, or another useful relationship.
-- **Keeps the hand-drawn character.** Ivory paper, dark pencil lines, and gentle colors, with rounded upright titles and softer handwritten small text.
+- **Keeps the hand-drawn character.** Ivory paper, dark pencil lines, and gentle colors, with rounded upright titles and left-side introductions, plus softer handwritten diagram captions.
 - **Preserves the lettering across devices.** Uses Comic Relief / Kalam for English and Xiaolai for explicitly requested Chinese. Published lettering is vector outlines, so missing system fonts cannot change it. Words remain editable in the scene source.
 - **Supports preview and revision.** Produces SVG, PNG, and offline HTML; preserves versions for comparison and responds to changes in title hierarchy, icon arrangement, and arrows.
 - **Checks README embedding.** Verifies image loading, cropping, and overflow at README and mobile widths. GitHub publication follows the authorization in the current task.

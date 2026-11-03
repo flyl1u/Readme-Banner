@@ -50,8 +50,8 @@ module.exports=({draw:d,sceneDir})=>{
       labels:[
         {text:'Agent Skill',x:77,y:91,w:470,h:40,size:24,color:'#6E7065'},
         {text:'Readme-\nBanner',x:69,y:138,w:503,h:224,size:103,bold:true,lineHeight:1.02,letterSpacing:-3},
-        {text:w.promise,x:77,y:388,w:493,h:60,size:31,letteringStyle:'body'},
-        {text:w.support,x:79,y:472,w:492,h:43,size:23,letteringStyle:'body',color:'#6E7065'},
+        {text:w.promise,x:77,y:388,w:493,h:60,size:31,letteringStyle:'upright'},
+        {text:w.support,x:79,y:472,w:492,h:43,size:23,letteringStyle:'upright',color:'#6E7065'},
         {text:w.context,x:672,y:462,w:195,h:42,size:26,letteringStyle:'body',align:'center'},
         {text:w.skill,x:997,y:365,w:164,h:38,size:24,bold:true,align:'center',rotate:-2},
         {text:'README.md',x:1340,y:171,w:227,h:34,size:24,letteringStyle:'body',color:'#6E7065',rotate:1},

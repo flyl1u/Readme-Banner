@@ -39,8 +39,8 @@ module.exports=({draw:d})=>{
     labels:[
       {text:'Context tool',x:66,y:171,w:440,h:36,size:23,letteringStyle:'upright',color:'#6E7065'},
       {text:'Papertrail',x:60,y:192,w:505,h:148,size:100,bold:true,letteringStyle:'upright',letterSpacing:-3},
-      {text:'Your sources, one clear brief.',x:66,y:335,w:485,h:57,size:30,letteringStyle:'body'},
-      {text:'Gather context. Keep the useful parts.',x:68,y:408,w:480,h:42,size:21,letteringStyle:'body',color:'#6E7065'},
+      {text:'Your sources, one clear brief.',x:66,y:335,w:485,h:57,size:30,letteringStyle:'upright'},
+      {text:'Gather context. Keep the useful parts.',x:68,y:408,w:480,h:42,size:21,letteringStyle:'upright',color:'#6E7065'},
       ...diagram.labels,
     ],
     sources:['Fictional Papertrail example for layout authoring; it makes no claim about an existing product.','Generic symbols, paper, brace, and connectors are original SVG geometry. Replace them with a real project mark and verified facts when adapting.'],

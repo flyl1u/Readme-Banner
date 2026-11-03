@@ -11,10 +11,11 @@ The user-referenced fly-favicon task demonstrated this exact failure. Its final 
 `textMode: 'outline'` is the default. All authored labels and `draw.text()` use bundled OFL outline data with separate visual roles:
 
 - `letteringStyle: 'upright'` is the default. Comic Relief Regular/Bold gives the large project title, eyebrow, and product/card names the rounded upright character preferred in the original references. It is an open replacement close to the references' Comic Sans appearance, not a bundled copy of Microsoft's font.
-- `letteringStyle: 'body'` retains Kalam Regular/Bold for smaller supporting copy and captions. Do not use its slant for the approved upright headings.
+- Left-side introductory copy also uses regular-weight `upright`: the fly-brief English reference uses Comic Sans for its promise and support line, not a slanted face. Comic Relief preserves that rounded character as portable outlines.
+- `letteringStyle: 'body'` retains Kalam Regular/Bold for optional softer diagram captions. Do not select it automatically for all small text or use its slant for the approved upright left column.
 - Explicit Chinese uses Xiaolai Regular in either role. Mixed labels use the appropriate glyph geometry for each character. CJK currently has one genuine font weight; English bold uses a real bold font rather than a synthetic browser weight.
 
-The initial outline fix had changed every English label to Kalam. That solved portability but changed the large-title style. Separate roles preserve the corrected small lettering while restoring the approved heading character. A system fallback is not needed for either role.
+The initial outline fix had changed every English label to Kalam. That solved portability but changed the large-title style. Separate roles preserve the approved heading character and corrected Chinese lettering. A later refinement aligns the English left-side promise and support line with the upright fly-brief reference as well. A system fallback is not needed for either role.
 
 The runtime checks the data checksums, resolves every code point, and checks the actual glyph bounds before export. Unsupported glyphs or missing/corrupt assets fail with a specific error. There is no silent system-font fallback. NFC normalization handles ordinary precomposed Latin accents; this is not a general complex-script shaping engine.
 

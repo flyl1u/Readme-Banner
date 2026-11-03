@@ -29,7 +29,7 @@ module.exports = ({draw: d, sceneDir}) => ({
     {text: 'ProjectName', x: 60, y: 190, w: 505, h: 150,
       size: 86, bold: true, letteringStyle: 'upright', letterSpacing: -3},
     {text: 'One concrete result.', x: 66, y: 340, w: 490, h: 57,
-      size: 32, letteringStyle: 'body'},
+      size: 32, letteringStyle: 'upright'},
   ],
   sources: ['List actual content, asset, and license sources here.'],
 });
@@ -39,7 +39,7 @@ This minimal syntax example is not a completed product explanation. A finished s
 
 Labels use canvas pixels: `text`, `x`, `y`, `w`, `h`, `size`, optional `color`, `bold`, `align` (`left`, `center`, `right`), `rotate`, `lineHeight`, and `letterSpacing`. Newlines are allowed, but measure their real height. Bounds include the rotated label box and the actual outline bounds. Default labels use bundled handwritten glyphs and export as paths. Their words remain in the source and the label group's `aria-label`.
 
-Use `letteringStyle: 'upright'` (the default) for the title, eyebrow, and product/card names. This selects rounded Comic Relief, including a true bold weight. Mark small supporting copy/captions `letteringStyle: 'body'` to retain Kalam. Chinese continues to use Xiaolai in both styles. `bold` and font size do not silently choose a slanted heading face. The starters demonstrate the approved combination.
+Use `letteringStyle: 'upright'` (the default) for the title, eyebrow, and product/card names. This selects rounded Comic Relief, including a true bold weight. Keep the left promise and support line in regular-weight `upright` too, following fly-brief. Reserve `letteringStyle: 'body'` for softer diagram captions; font size alone does not select a family. Chinese continues to use Xiaolai in both styles. `bold` and font size do not silently choose a slanted heading face. The starters demonstrate the approved combination.
 
 Set a scene's `textMode: 'native'` only for an explicitly requested native-text editing requirement. Only that mode uses a label's `font` field. Legacy `font` strings do not override the bundled handwriting in default outline mode. Native exports carry a portability warning in the report. See [lettering.md](lettering.md) before changing this policy.
 

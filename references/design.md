@@ -31,7 +31,7 @@ These are useful defaults, not validation targets. The narrower report rows in f
 - Auxiliary fills: peach `#F6DFD2`, sage `#DDEDE2`, blue `#DFEAFA`, lilac `#E8E2EF`.
 - Low-contrast dots are optional. Do not turn paper texture into visual noise.
 - Title, eyebrow, and product/card-name lettering is rounded and upright, using bundled Comic Relief regular/bold outlines (`letteringStyle: 'upright'`, the default). The approved examples have this distinct character; "hand-drawn" does not mean slanted.
-- Small body text can retain the softer Kalam treatment with `letteringStyle: 'body'`. Explicit Chinese localization keeps Xiaolai outlines in either role. The reference PNGs show the earlier system-font implementation; match its visual character without depending on installed fonts.
+- The left promise and support line use `letteringStyle: 'upright'` in regular weight. The fly-brief English SVG uses upright Comic Sans for both lines (32 px and 21 px); bundled Comic Relief is the portable visual match. Do not choose Kalam merely because these labels are small. Softer diagram captions may use `letteringStyle: 'body'` (Kalam). Explicit Chinese localization keeps the approved Xiaolai outlines in either role.
 - A font's bounding box can be much taller than its point size. Reserve real ascender/descender space and measure the actual glyph geometry. A system font name, `cursive`, KaiTi, or a passing bounds check does not prove handwritten appearance or Chinese glyph coverage. Do not silently substitute a serif or sans-serif when handwriting is requested.
 - Native SVG text is an explicit editing tradeoff, not the default publication mode. See [lettering.md](lettering.md).
 
