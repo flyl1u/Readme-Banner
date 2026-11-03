@@ -10,27 +10,17 @@ This Agent Skill reads the project, creates the banner, builds a local preview, 
 
 ## Examples
 
-These are the actual SVGs used by the projects. Click an image to visit its repository. The introduction banner at the top of this README was also made with Readme-Banner.
-
-### fly-favicon · Generated with this skill
-
-From an icon design request to multiple candidates, comparison, tab testing, and downloads. This banner was generated with the skill and refined to correct its English and Chinese lettering.
+### Case1
 
 [![fly-favicon banner: design input becomes icon candidates to compare and try](assets/readme/examples/fly-favicon.en.svg)](https://github.com/flyl1u/fly-favicon)
 
-### fly-brief · Original workflow
-
-Several Agents feed one skill, which produces a local HTML report. The grouping, shared inlet, and proportion revisions behind this banner became the original workflow for Readme-Banner.
+### Case2
 
 [![fly-brief banner: Agents feed a skill that produces a local HTML report](assets/readme/examples/fly-brief.en.svg)](https://github.com/flyl1u/fly-brief)
 
-### CodexPulse · Visual reference
-
-The same project moves between the before and after panels, explaining how recent activity brings it to the top. This banner was an early visual reference for the skill.
+### Case3
 
 [![CodexPulse banner: Project B moves from second place to the top](assets/readme/examples/codex-pulse.en.svg)](https://github.com/flyl1u/CodexPulse)
-
-The example SVGs preserve their upstream versions. See [provenance and licenses](assets/readme/examples/SOURCES.md).
 
 ## What it does
 

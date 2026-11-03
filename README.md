@@ -10,27 +10,17 @@
 
 ## 案例
 
-下面直接展示项目中使用的 SVG，点击图片可查看对应项目。本仓库顶部的介绍图也由 Readme-Banner 制作。
-
-### fly-favicon · 生成案例
-
-从图标设计需求，到多风格候选、对比试用和下载。这张首图使用本 Skill 生成，并经过中英文字体修订。
+### Case1
 
 [![fly-favicon 首图：从设计需求到多风格图标对比与试用](assets/readme/examples/fly-favicon.zh-CN.svg)](https://github.com/flyl1u/fly-favicon)
 
-### fly-brief · 流程来源
-
-多个 Agent 汇入同一个 Skill，再产出本地 HTML 报告。这张首图的分组、公共入口和比例调整过程，是本 Skill 的原始制作案例与流程来源。
+### Case2
 
 [![fly-brief 首图：多个 Agent 汇入 Skill，生成本地 HTML 报告](assets/readme/examples/fly-brief.zh-CN.svg)](https://github.com/flyl1u/fly-brief)
 
-### CodexPulse · 风格参考
-
-用同一个项目在排序前后的变化，解释“最近活跃的项目移到顶部”。这张首图是本 Skill 的早期视觉参考。
+### Case3
 
 [![CodexPulse 首图：项目 B 从第二位移到顶部](assets/readme/examples/codex-pulse.zh-CN.svg)](https://github.com/flyl1u/CodexPulse)
-
-案例 SVG 保留原项目版本，来源与授权见 [案例记录](assets/readme/examples/SOURCES.md)。
 
 ## 效果与特点
 
